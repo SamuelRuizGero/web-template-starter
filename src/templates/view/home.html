@@ -1,0 +1,32 @@
+<div id="main-content">
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    <h1>This is our home page</h1>
+
+    {{homeCtrl.message}}
+    <h2>Sidenav Push Example</h2>
+    <p>Click on the element below to open the side navigation menu, and push this content to the right. Notice that we add a black see-through background-color to body when the sidenav is opened.</p>
+
+</div>
+
+<script>
+    //vanilla javascript
+    function openNav() {
+        console.log(screen.width);
+        if (screen.width <= 500) {
+            document.getElementById("mySidenav").style.width = "100%";
+            document.getElementById("main-content").style.marginLeft = "0";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.7)";
+        } else {
+            document.getElementById("mySidenav").style.width = "400px";
+            document.getElementById("main-content").style.marginLeft = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.7)";
+        }
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main-content").style.marginLeft = "0";
+        document.body.style.backgroundColor = "white";
+    }
+
+</script>

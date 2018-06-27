@@ -1,0 +1,60 @@
+/*
+Relative Selectors --> https://www.w3schools.com/cssref/trysel.asp
+    *   select all elements
+    div, p          Select all <div> and all <p> elements
+    div p           Select all <p> elements inside <div> element
+    div > p         Select all <p> elements where the PARENT is a <div> element   
+    div + p         Selelct all <p> elements that are pased immediately after <div> element
+    ul ~ table      All <table> elements that are siblings of a <ul> element.
+	[id]	          Selects all elements with a target attribute (in this case with the attribute of id).
+    [target=_blank]	Selects all elements with target="_blank"
+    [title~=flower]	Selects all elements with a title attribute *containing* the word "flower"
+    [id|=my]        All elements with an id attribute value equal to "my" or starting with "my" followed by a hyphen (-)
+    a[href^="https"]Selects every <a> element whose href attribute value *begins* with "https"
+    a[href$=".pdf"]	Selects every <a> element whose href attribute value *ends* with ".pdf"
+    a[href*="ally"]	Selects every <a> element whose href attribute value *contains* the substring "ally"
+    a:active	    Selects the active link
+    p::after	    Insert something after the content of each <p> element 
+    p::before	    Insert something before the content of each <p> element
+    input:checked	Selects every checked <input> element
+    input:disabled	Selects every disabled <input> element
+    p:empty	        Selects every <p> element that has no children tags or text
+    p:first-child	Selects every <p> element that is the first child of its parent
+    p::first-letter	Selects the first letter of every <p> element
+    p::first-line	Selects the first line of every <p> element
+    p:first-of-type	Selects every <p> element that is the first <p> element of its parent
+    input:focus	    Selects the input element which has focus
+    a:hover	        Selects links on mouse over
+    input:in-range	Selects input elements with a value within a specified range
+    input:invalid	Selects all input elements with an invalid value
+    p:last-child	Selects every <p> element that is the last child of its parent
+    p:last-of-type	Selects every <p> element that is the last <p> element of its parent
+    a:link	         Selects all unvisited links
+    a:visited	      Selects all visited links
+    :not(p)	Selects every element that is not a <p> element
+
+Display property
+    Before the Flexbox Layout module, there were four layout modes:
+
+    1. Block, for sections in a webpage
+    2. Inline, for text
+    3. Table, for two-dimensional table data
+    4. Positioned, for explicit position of an element
+    The Flexible Box Layout Module, makes it easier to design flexible responsive layout structure without using float or positioning.
+    
+    step 1: To start using the Flexbox model, you need to first define a flex container.
+    step 2: 
+        The flex container properties are:
+
+        flex-direction
+        flex-wrap
+        flex-flow
+        justify-content
+        align-items
+        align-content
+    Step 3: 
+*/
+body {
+    font-family: "Lato", sans-serif;
+    transition: background-color .5s;
+}
